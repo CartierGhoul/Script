@@ -1,0 +1,1529 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "CARTIER HUB",
+	LoadingTitle = "CARTIER HUB",
+	LoadingSubtitle = "CARTIER HUB By CartierCampy and CartierGhoul",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "CARTIER HUB"
+	},
+	Discord = {
+		Enabled = true,
+		Invite = "HPPJNf43yK", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+		RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "Key",
+		Subtitle = "Key System",
+		Note = "No method of obtaining the falsely y is provided",
+		FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = {"dwaj8idwa2","d9ajd9aw2","dpsaksgfd0g","dlndsadasda","drasdasdada","dkadsadasa","dthdsadasa","dyuddsadas","dwa9kmd9aw2,"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+	}
+})
+
+local MainTab = Window:CreateTab("Amore", 4483362458) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = MainTab:CreateButton({
+	Name = "Amore Aimbot",
+	Callback = function()
+		local SeventyFive = {
+			Distance = 65,
+			Power = 75,	
+		}
+
+		local Self = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local Player = game.Players.LocalPlayer
+		local Humanoid = Player.Character.Humanoid
+		local char = Player.Character
+		local Camera = workspace.CurrentCamera
+
+		isdoing = false
+
+
+
+		game:GetService("UserInputService").InputBegan:connect(function(key, Processed)
+			if Processed then return end
+
+
+			if key.KeyCode == Enum.KeyCode.N
+
+			then local  Tool = game.Players.LocalPlayer.Character:FindFirstChild("Basketball")
+				if not Tool then return end
+
+				for _,v in pairs(workspace:GetDescendants()) do
+
+					local function cam(amount)
+						while wait() do
+							if isdoing == true then
+								local pos = char.Head.Position
+								local partyGoal = v
+								local lookAt = v.Position + Vector3.new(0,amount,0)
+								local cameraCFrame = CFrame.new(pos, lookAt)
+								Camera.CFrame = cameraCFrame
+							else
+								return nil
+							end
+						end
+					end
+
+
+					if v.Name == "Dunk" then
+						if (v.Position - Self.Position).Magnitude <= 63.5 and (v.Position - Self.Position).Magnitude  >= 61 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(80)
+						elseif (v.Position - Self.Position).Magnitude <= 64 and (v.Position - Self.Position).Magnitude  >= 63.5 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(80)
+
+						elseif (v.Position - Self.Position).Magnitude <= 65 and (v.Position - Self.Position).Magnitude  >= 64 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(80)
+
+						elseif (v.Position - Self.Position).Magnitude <= 66 and (v.Position - Self.Position).Magnitude  >= 65 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(75)
+
+						elseif (v.Position - Self.Position).Magnitude <= 67 and (v.Position - Self.Position).Magnitude  >= 66 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(75)
+
+						elseif (v.Position - Self.Position).Magnitude <= 68 and (v.Position - Self.Position).Magnitude  >= 67 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(75)
+
+						elseif (v.Position - Self.Position).Magnitude <= 69 and (v.Position - Self.Position).Magnitude  >= 68 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+
+						elseif (v.Position - Self.Position).Magnitude <= 70 and (v.Position - Self.Position).Magnitude  >= 69 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+
+						elseif (v.Position - Self.Position).Magnitude <= 71 and (v.Position - Self.Position).Magnitude  >= 70 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+
+						elseif (v.Position - Self.Position).Magnitude <= 72 and (v.Position - Self.Position).Magnitude  >= 71 then -- 3P
+
+							game.ReplicatedStorage.Events.Core["Adjust Power"]:FireServer(85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+
+
+
+
+
+
+
+
+
+
+						end	
+					end
+				end	
+			end
+		end)
+
+		local UIS = game:service('UserInputService')
+		UIS.InputBegan:connect(function(l)
+			if l.UserInputType == Enum.UserInputType.MouseButton1 then
+				isdoing = false
+			end
+		end)
+
+		local tr = false
+	end,
+})
+
+local Slider = MainTab:CreateSlider({
+	Name = "AmoreSpeed",
+	Range = {0, 17},
+	Increment = 1,
+	Suffix = "Speed",
+	CurrentValue = 16,
+	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end,
+})
+
+local Button = MainTab:CreateButton({
+	Name = "Lag switch (X TO USE)",
+	Callback = function()
+		loadstring(game:HttpGet("https://[Log in to view URL]", true))()
+	end,
+})
+
+local Button = MainTab:CreateButton({
+	Name = "Auto Guard",
+	Callback = function()
+		local tr = false
+
+		game:GetService("UserInputService").InputBegan:Connect(function(key, gpe)
+			if key.KeyCode == Enum.KeyCode.X and not gpe and tr == false then
+				tr = true
+				for i, v in pairs(game.Players:GetPlayers()) do
+					local char = game.Players.LocalPlayer.Character
+					if v.Name ~= char.Name and (v.Character.Torso.CFrame.p - char.Torso.CFrame.p).Magnitude < 25 then
+						while tr == true do
+							if v.Character.Torso.Velocity.magnitude > 0.5 and v.Character:FindFirstChild("Basketball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p + v.Character.Torso.Velocity.unit * 7)
+							elseif v.Character.Torso.Velocity.magnitude < 0.5 and v.Character:FindFirstChild("Basketball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p)
+							elseif not v.Character:FindFirstChild("Basketball") then
+								tr = false
+							end
+							task.wait()
+						end
+					end
+				end
+			elseif key.KeyCode == Enum.KeyCode.X and not gpe and tr == true then
+				tr = false
+			end
+		end
+		)
+	end,
+})
+
+local Sectab = Window:CreateTab("KNB SUPER", 4483362458) -- Title, Image
+local SecondSection = Sectab:CreateSection("Sectab")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = Sectab:CreateButton({
+	Name = "KNBS Aimbot",
+	Callback = function()
+		local SeventyFive = {
+			Distance = 65,
+			Power = 75,	
+		}
+
+		local Self = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local Player = game.Players.LocalPlayer
+		local Humanoid = Player.Character.Humanoid
+		local char = Player.Character
+		local Camera = workspace.CurrentCamera
+
+		local Mouse = game.Players.LocalPlayer:GetMouse()
+
+		isdoing = false
+
+
+
+		game:GetService("UserInputService").InputBegan:connect(function(key, Processed)
+			if Processed then return end
+
+
+			if key.KeyCode == Enum.KeyCode.N then
+
+				local Tool = game.Players.LocalPlayer.Character:FindFirstChild("basketball")
+				if not Tool then return end
+
+				for _,v in pairs(workspace:GetDescendants()) do
+
+					local function cam(amount)
+						while wait() do
+							if isdoing == true then
+								local pos = char.Head.Position
+								local partyGoal = v
+								local lookAt = v.Position + Vector3.new(0,amount,0)
+								local cameraCFrame = CFrame.new(pos, lookAt)
+								Camera.CFrame = cameraCFrame
+							else
+								return nil
+							end
+						end
+					end
+
+
+					if v.Name == "aimbotPart" then
+						if (v.Position - Self.Position).Magnitude <= 68 and (v.Position - Self.Position).Magnitude  >= 67 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(95)
+						elseif (v.Position - Self.Position).Magnitude <= 69 and (v.Position - Self.Position).Magnitude  >= 68 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(95)
+						elseif (v.Position - Self.Position).Magnitude <= 70 and (v.Position - Self.Position).Magnitude  >= 69 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(95)
+						elseif (v.Position - Self.Position).Magnitude <= 71 and (v.Position - Self.Position).Magnitude  >= 70 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(90)
+						elseif (v.Position - Self.Position).Magnitude <= 72 and (v.Position - Self.Position).Magnitude  >= 71 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(90)
+						elseif (v.Position - Self.Position).Magnitude <= 73 and (v.Position - Self.Position).Magnitude  >= 72 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(90)
+						elseif (v.Position - Self.Position).Magnitude <= 74 and (v.Position - Self.Position).Magnitude  >= 73 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(85)
+						elseif (v.Position - Self.Position).Magnitude <= 75 and (v.Position - Self.Position).Magnitude  >= 74 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(85)
+						elseif (v.Position - Self.Position).Magnitude <= 76 and (v.Position - Self.Position).Magnitude  >= 75 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(85)
+						elseif (v.Position - Self.Position).Magnitude <= 77 and (v.Position - Self.Position).Magnitude  >= 76 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(80)
+						elseif (v.Position - Self.Position).Magnitude <= 78 and (v.Position - Self.Position).Magnitude  >= 77 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(80)
+						elseif (v.Position - Self.Position).Magnitude <= 79 and (v.Position - Self.Position).Magnitude  >= 78 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(70)
+						elseif (v.Position - Self.Position).Magnitude <= 80 and (v.Position - Self.Position).Magnitude  >= 79 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+						elseif (v.Position - Self.Position).Magnitude <= 81 and (v.Position - Self.Position).Magnitude  >= 80 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("U")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+						elseif (v.Position - Self.Position).Magnitude <= 44 and (v.Position - Self.Position).Magnitude  >= 42 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+						elseif (v.Position - Self.Position).Magnitude <= 45 and (v.Position - Self.Position).Magnitude  >= 44 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+						elseif (v.Position - Self.Position).Magnitude <= 42 and (v.Position - Self.Position).Magnitude  >= 40 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(65)
+						elseif (v.Position - Self.Position).Magnitude <= 55 and (v.Position - Self.Position).Magnitude  >= 54 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 54 and (v.Position - Self.Position).Magnitude  >= 53 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 53 and (v.Position - Self.Position).Magnitude  >= 52 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 52 and (v.Position - Self.Position).Magnitude  >= 53 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 51 and (v.Position - Self.Position).Magnitude  >= 52 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 50 and (v.Position - Self.Position).Magnitude  >= 51 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+						elseif (v.Position - Self.Position).Magnitude <= 58 and (v.Position - Self.Position).Magnitude  >= 57 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("Y")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+						elseif (v.Position - Self.Position).Magnitude <= 59 and (v.Position - Self.Position).Magnitude  >= 58 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("Y")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+						elseif (v.Position - Self.Position).Magnitude <= 60 and (v.Position - Self.Position).Magnitude  >= 59 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("Y")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(60)
+						end	
+					end
+				end	
+
+			elseif key.KeyCode == Enum.KeyCode.B then
+
+				local Tool = game.Players.LocalPlayer.Character:FindFirstChild("basketball")
+				if not Tool then return end
+
+				for _,v in pairs(workspace:GetDescendants()) do
+
+					local function cam(amount)
+						while wait() do
+							if isdoing == true then
+								local pos = char.Head.Position
+								local partyGoal = v
+								local lookAt = v.Position + Vector3.new(0,amount,0)
+								local cameraCFrame = CFrame.new(pos, lookAt)
+								Camera.CFrame = cameraCFrame
+							else
+								return nil
+							end
+						end
+					end
+
+
+					if v.Name == "aimbotPart" then
+						if (v.Position - Self.Position).Magnitude <= 44 and (v.Position - Self.Position).Magnitude  >= 42 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(45)
+
+						elseif (v.Position - Self.Position).Magnitude <= 45 and (v.Position - Self.Position).Magnitude  >= 44 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(40)	
+
+						elseif (v.Position - Self.Position).Magnitude <= 42 and (v.Position - Self.Position).Magnitude  >= 41 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(50)	
+
+						elseif (v.Position - Self.Position).Magnitude <= 41 and (v.Position - Self.Position).Magnitude  >= 40 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)	
+
+						elseif (v.Position - Self.Position).Magnitude <= 40 and (v.Position - Self.Position).Magnitude  >= 39 then -- 3P
+							game.Players.LocalPlayer.Character.main.personalEvents.keybind:FireServer("T")
+							local A1 = v.Position - Tool.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)	
+
+
+
+						end	
+					end
+				end	
+			end
+		end)
+
+		local UIS = game:service('UserInputService')
+		UIS.InputBegan:connect(function(l)
+			if l.UserInputType == Enum.UserInputType.MouseButton1 then
+				isdoing = false
+			end
+		end)
+
+		local tr = false
+	end,
+})
+
+local Button = Sectab:CreateButton({
+	Name = "KNBS Auto Guard",
+	Callback = function()
+		local tr = false
+
+		game:GetService("UserInputService").InputBegan:Connect(function(key, gpe)
+			if key.KeyCode == Enum.KeyCode.X and not gpe and tr == false then
+				tr = true
+				for i, v in pairs(game.Players:GetPlayers()) do
+					local char = game.Players.LocalPlayer.Character
+					if v.Name ~= char.Name and (v.Character.Torso.CFrame.p - char.Torso.CFrame.p).Magnitude < 25 then
+						while tr == true do
+							if v.Character.Torso.Velocity.magnitude > 0.5 and v.Character:FindFirstChild("basketball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p + v.Character.Torso.Velocity.unit * 7)
+							elseif v.Character.Torso.Velocity.magnitude < 0.5 and v.Character:FindFirstChild("basketball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p)
+							elseif not v.Character:FindFirstChild("basketball") then
+								tr = false
+							end
+							task.wait()
+						end
+					end
+				end
+			elseif key.KeyCode == Enum.KeyCode.X and not gpe and tr == true then
+				tr = false
+			end
+		end
+		)
+	end,
+})
+
+local Thirdtab = Window:CreateTab("ZNB", 4483362458) -- Title, Image
+local ThirdSectionSection = Thirdtab:CreateSection("Thirdtab")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = Thirdtab:CreateButton({
+	Name = "ZNB Aimbot",
+	Callback = function()
+		local tr = false
+		local UIS = game:GetService("UserInputService")
+
+		UIS.TextBoxFocused:Connect(function()
+			Typing = true
+
+		end)
+
+		UIS.TextBoxFocusReleased:Connect(function()
+			Typing = false
+
+		end)
+		local Player = game.Players.LocalPlayer
+		local Remote = Player.Character:WaitForChild("Remote")
+
+		UIS.InputBegan:Connect(function(Key, gpe)
+
+			if Key.KeyCode == Enum.KeyCode.Three and (Typing == false) then
+
+				if Player.Character:FindFirstChild("Ball") then
+					Remote:FireServer("ActivateSkill", {Skill = "LOL",Spec = "LOL"})
+				end
+			end
+		end
+		)
+	end,
+})
+
+local Button = Thirdtab:CreateButton({
+	Name = "ZNB Auto Guard",
+	Callback = function()
+		local tr = false
+
+		game:GetService("UserInputService").InputBegan:Connect(function(key, gpe)
+			if key.KeyCode == Enum.KeyCode.X and not gpe and tr == false then
+				tr = true
+				for i, v in pairs(game.Players:GetPlayers()) do
+					local char = game.Players.LocalPlayer.Character
+					if v.Name ~= char.Name and (v.Character.Torso.CFrame.p - char.Torso.CFrame.p).Magnitude < 25 then
+						while tr == true do
+							if v.Character.Torso.Velocity.magnitude > 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p + v.Character.Torso.Velocity.unit * 7)
+							elseif v.Character.Torso.Velocity.magnitude < 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p)
+							elseif not v.Character:FindFirstChild("Ball") then
+								tr = false
+							end
+							task.wait()
+						end
+					end
+				end
+			elseif key.KeyCode == Enum.KeyCode.X and not gpe and tr == true then
+				tr = false
+			end
+		end
+		)
+	end,
+})
+
+local IchidoTab = Window:CreateTab("Ichido", 4483362458) -- Title, Image
+local IchidoSection = IchidoTab:CreateSection("ICHIDO")
+
+Rayfield:Notify({
+	Title = "Executed Campy Hub",
+	Content = "haha loser",
+	Duration = 4.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "ok ",
+			Callback = function()
+				print("")
+			end
+		},
+	},
+})
+
+local Button = IchidoTab:CreateButton({
+	Name = "Mag",
+	Callback = function()
+		game:GetService("UserInputService").InputBegan:Connect(function(i, gpe)
+			if not gpe and i.KeyCode == Enum.KeyCode.C then
+				-- Variables
+
+				-- ghoul made this shit
+
+				-- Connect
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+				wait(0)
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+				wait(0.1)
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+				wait(0)
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+				wait(0.1)
+				game.Workspace:FindFirstChild("Ball").CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+			end
+		end)
+	end,
+})
+
+local Slider = IchidoTab:CreateSlider({
+	Name = "Speed",
+	Range = {0, 22},
+	Increment = 1,
+	Suffix = "Speed",
+	CurrentValue = 12,
+	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end,
+})
+
+local Slider = IchidoTab:CreateSlider({
+	Name = "Stamina",
+	Range = {0, 100},
+	Increment = 1,
+	Suffix = "Stamina",
+	CurrentValue = 100,
+	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Stamina.Value = (Value)
+	end,
+})
+
+local Button = IchidoTab:CreateButton({
+	Name = "Auto Guard",
+	Callback = function()
+		local tr = false
+
+		game:GetService("UserInputService").InputBegan:Connect(function(key, gpe)
+			if key.KeyCode == Enum.KeyCode.Z and not gpe and tr == false then
+				tr = true
+				for i, v in pairs(game.Players:GetPlayers()) do
+					local char = game.Players.LocalPlayer.Character
+					if v.Name ~= char.Name and (v.Character.Torso.CFrame.p - char.Torso.CFrame.p).Magnitude < 25 then
+						while tr == true do
+							if v.Character.Torso.Velocity.magnitude > 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p + v.Character.Torso.Velocity.unit * 7)
+							elseif v.Character.Torso.Velocity.magnitude < 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p)
+							elseif not v.Character:FindFirstChild("Ball") then
+								tr = false
+							end
+							task.wait()
+						end
+					end
+				end
+			elseif key.KeyCode == Enum.KeyCode.Four and not gpe and tr == true then
+				tr = false
+			end
+		end
+		)
+	end,
+})
+
+local FourthTab = Window:CreateTab("Vedden", 4483362458) -- Title, Image
+local FourthTabSection = FourthTab:CreateSection("Vedden")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = FourthTab:CreateButton({
+	Name = "Vedden Aimbot",
+	Callback = function()
+		local SeventyFive = {
+			Distance = 65,
+			Power = 75,	
+		}
+
+		local Self = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local Player = game.Players.LocalPlayer
+		local Humanoid = Player.Character.Humanoid
+		local char = Player.Character
+		local Camera = workspace.CurrentCamera
+
+		isdoing = false
+
+
+
+		game:GetService("UserInputService").InputBegan:connect(function(key, Processed)
+			if Processed then return end
+
+
+			if key.KeyCode == Enum.KeyCode.N then
+
+				local Tool = game.Players.LocalPlayer.Character:FindFirstChild("Ball")
+				if not Tool then return end
+
+				local events = game.ReplicatedStorage.Animations.withball
+				local ShootingFormRelease = Humanoid:LoadAnimation(events.ShootingFormRelease)
+				local ShootingFormTrack = Humanoid:LoadAnimation(events.ShootingForm)
+
+
+				for _,v in pairs(workspace.Hoops:GetDescendants()) do
+
+					local function cam(amount)
+						while wait() do
+							if isdoing == true then
+								local pos = char.Head.Position
+								local partyGoal = v
+								local lookAt = v.Position + Vector3.new(0,amount,0)
+								local cameraCFrame = CFrame.new(pos, lookAt)
+								Camera.CFrame = cameraCFrame
+							else
+								return nil
+							end
+						end
+					end
+
+
+					if v.Name == "Hax" then
+						if (v.Position - Self.Position).Magnitude <= 63 and (v.Position - Self.Position).Magnitude  >= 60 then -- 3P
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 75)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,200,0)
+							isdoing = true
+							cam(55)
+
+						elseif (v.Position - Self.Position).Magnitude <= 53 and (v.Position - Self.Position).Magnitude  >= 51 then -- Deep Midrange
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 65)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(40)
+
+						elseif (v.Position - Self.Position).Magnitude <= 55 and (v.Position - Self.Position).Magnitude  >= 53 then -- Deep Midrange
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 65)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(32)
+
+						elseif (v.Position - Self.Position).Magnitude <= 51 and (v.Position - Self.Position).Magnitude  >= 49 then -- Fade
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 65)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(30)
+
+						elseif (v.Position - Self.Position).Magnitude <= 49 and (v.Position - Self.Position).Magnitude  >= 47 then -- Fade
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 65)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(50)
+
+						elseif (v.Position - Self.Position).Magnitude <= 47 and (v.Position - Self.Position).Magnitude  >= 45 then -- Fade
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 60)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(40)
+
+						elseif (v.Position - Self.Position).Magnitude <= 41 and (v.Position - Self.Position).Magnitude  >= 38 then -- Fade
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 60)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(50)
+
+						elseif (v.Position - Self.Position).Magnitude <= 32 and (v.Position - Self.Position).Magnitude  >= 29 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 35)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(5)
+
+						elseif (v.Position - Self.Position).Magnitude <= 64 and (v.Position - Self.Position).Magnitude  >= 63 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 75)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(45)
+
+						elseif (v.Position - Self.Position).Magnitude <= 65 and (v.Position - Self.Position).Magnitude  >= 64 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 75)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(40)
+
+						elseif (v.Position - Self.Position).Magnitude <= 70 and (v.Position - Self.Position).Magnitude  >= 69 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 80)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(50)
+
+						elseif (v.Position - Self.Position).Magnitude <= 76 and (v.Position - Self.Position).Magnitude  >= 75 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 85)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(39)
+
+						elseif (v.Position - Self.Position).Magnitude <= 84 and (v.Position - Self.Position).Magnitude  >= 82 then -- High Layup
+
+							game.ReplicatedStorage.adjustpower:FireServer(Player.Name, 90)
+							local A1 = v.Position - Tool.Basketball.Position *(100/200) + Vector3.new(0,50,0)
+							isdoing = true
+							cam(41)
+
+
+
+
+
+
+
+
+
+
+
+						end	
+					end
+				end	
+			end
+		end)
+
+		local UIS = game:service('UserInputService')
+		UIS.InputBegan:connect(function(l)
+			if l.UserInputType == Enum.UserInputType.MouseButton1 then
+				isdoing = false
+			end
+		end)
+
+		local tr = false
+	end,
+
+})
+
+local Slider = FourthTab:CreateSlider({
+	Name = "FOV",
+	Range = {70, 120},
+	Increment = 1,
+	Suffix = "FOV",
+	CurrentValue = 70,
+	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		local FOV = 90
+		game.Workspace.Camera.FieldOfView = FOV
+	end,
+})
+
+
+local Button = FourthTab:CreateButton({
+	Name = "Vedden Auto Guard",
+	Callback = function()
+		local tr = false
+
+		game:GetService("UserInputService").InputBegan:Connect(function(key, gpe)
+			if key.KeyCode == Enum.KeyCode.X and not gpe and tr == false then
+				tr = true
+				for i, v in pairs(game.Players:GetPlayers()) do
+					local char = game.Players.LocalPlayer.Character
+					if v.Name ~= char.Name and (v.Character.Torso.CFrame.p - char.Torso.CFrame.p).Magnitude < 25 then
+						while tr == true do
+							if v.Character.Torso.Velocity.magnitude > 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p + v.Character.Torso.Velocity.unit * 7)
+							elseif v.Character.Torso.Velocity.magnitude < 0.5 and v.Character:FindFirstChild("Ball") then
+								char.Humanoid:MoveTo(v.Character.Torso.CFrame.p)
+							elseif not v.Character:FindFirstChild("Ball") then
+								tr = false
+							end
+							task.wait()
+						end
+					end
+				end
+			elseif key.KeyCode == Enum.KeyCode.X and not gpe and tr == true then
+				tr = false
+			end
+		end
+		)
+	end,
+})
+
+local FifthTab = Window:CreateTab("EACU/EAU", 4483362458) -- Title, Image
+local FifthTabSelection = FifthTab:CreateSection("EACU/EAU")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = FifthTab:CreateButton({
+	Name = "EACU Aimbot",
+	Callback = function()
+		-- Variables
+
+		_G.Enabled = true
+
+		local s, e = pcall(function()
+			_G.rsC:Disconnect()
+			_G.hC:Disconnect()
+			_G.torso:Destroy()
+		end)
+
+		if s then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "EACU Aimbot",
+				Text = "Aimbot was reset!",
+				Duration = 3
+			})
+
+			_G.rsC = nil
+			_G.hC = nil
+			_G.torso = nil
+		end
+
+		local plr = game.Players.LocalPlayer
+
+		local uis = game:GetService("UserInputService")
+		local rs = game:GetService("RunService")
+
+		local footing = false
+		local almostFooting
+		local hasBall = false
+		local parts = {}
+		local RunService = game:GetService("RunService")
+		local CoreGui = game:GetService("CoreGui")
+		local Player = game.Players.LocalPlayer
+
+		-- Torso Part
+
+		_G.torso = Instance.new("Part")
+		_G.torso.Transparency = 1
+		_G.torso.CanCollide = false
+		_G.torso.Anchored = false
+		_G.torso.Massless = true
+		_G.torso.Name = tostring(math.random(-9e9, 9e9))
+		_G.torso.Size = Vector3.new(2.5, 2.5, 1.5)
+		_G.torso.Transparency = 1
+		_G.torso.Material = Enum.Material.Plastic
+		_G.torso.Parent = workspace
+
+		-- Functions
+
+		function checkFooting()
+			if hasBall then
+				if footing then
+					if CoreGui:FindFirstChild("Highlight") then
+						if CoreGui:FindFirstChild("Highlight").Adornee.Parent == nil then
+							CoreGui:FindFirstChild("Highlight").Adornee = Player.Character
+						end
+
+						CoreGui:FindFirstChild("Highlight").Enabled = true
+						CoreGui:FindFirstChild("Highlight").FillColor = Color3.fromRGB(0, 255, 0)
+						CoreGui:FindFirstChild("Highlight").OutlineColor = Color3.fromRGB(25, 255, 25)
+					else
+						local Highlight = Instance.new("Highlight")
+						Highlight.Parent = CoreGui
+						Highlight.Adornee = Player.Character
+						Highlight.Enabled = false
+					end
+				elseif almostFooting then
+					if CoreGui:FindFirstChild("Highlight") then
+						if CoreGui:FindFirstChild("Highlight").Adornee.Parent == nil then
+							CoreGui:FindFirstChild("Highlight").Adornee = Player.Character
+						end
+
+						CoreGui:FindFirstChild("Highlight").Enabled = true
+						CoreGui:FindFirstChild("Highlight").FillColor = Color3.fromRGB(251, 255, 0)
+						CoreGui:FindFirstChild("Highlight").OutlineColor = Color3.fromRGB(255, 255, 0)
+					else
+						local Highlight = Instance.new("Highlight")
+						Highlight.Parent = CoreGui
+						Highlight.Adornee = Player.Character
+						Highlight.Enabled = false
+					end
+				elseif not footing and CoreGui:FindFirstChild("Highlight") then
+					CoreGui:FindFirstChild("Highlight").Enabled = false
+				end
+			elseif not hasBall and CoreGui:FindFirstChild("Highlight") then
+				CoreGui:FindFirstChild("Highlight").Enabled = false
+			end
+		end
+
+		function getGoal()
+			local dist, goal = 9e9
+			for i,v in pairs(workspace:GetDescendants()) do
+				if v.Name == "Goal" or v.Name == "SHEESH" or v.Name == "Rim" then
+					local mag = (plr.Character.HumanoidRootPart.Position - v.Position).Magnitude
+					if dist > mag then
+						dist = mag; goal = v;
+					end
+				end
+			end
+			return goal
+		end
+
+		function getNewVector(goal)
+			local dist = (plr.Character.Torso.Position - goal.Position).Magnitude
+			return goal.Position + Vector3.new(0, 45 - (dist / 10), 0) - plr.Character.Humanoid.MoveDirection
+		end
+
+		function shootBall(vector)
+			local event = plr.Character.Basketball.shoot_event
+
+			local unit = (vector - plr.Character.Head.Position).Unit
+			local spawnPos = plr.Character.PrimaryPart.Position + unit * 3.8
+
+			if spawnPos.Y - plr.Character.PrimaryPart.Position.Y < 4 then
+				spawnPos = plr.Character.PrimaryPart.Position + unit * 4
+			end
+
+			event:FireServer(
+				vector,
+				spawnPos,
+				"\240\159\148\165\240\159\148\165"
+			)
+		end
+
+		function handleJumped()
+			if hasBall and footing or almostFooting and _G.Enabled then
+				task.wait(0.3)
+				shootBall(getNewVector(getGoal()))
+			end
+		end
+
+		function handleRender()
+			if not _G.Enabled or _G.torso == nil then
+				return
+			end
+
+			local goal = getGoal()
+			local dist = (plr.Character.Torso.Position - goal.Position).Magnitude
+
+			if math.floor(dist) == 59 or math.floor(dist) == 64 then
+				footing = true
+				almostFooting = false
+			elseif math.floor(dist) == 58 or math.floor(dist) == 60 then
+				almostFooting = true
+				footing = false
+			else
+				footing = false
+				almostFooting = false
+			end
+
+			if plr.Character and plr.Character:FindFirstChild("Basketball") then
+				task.wait(0.5)
+				hasBall = true
+			else
+				hasBall = false
+			end
+
+			checkFooting()
+			_G.torso.Position = plr.Character:WaitForChild("Torso").Position
+			_G.torso.Rotation = plr.Character:WaitForChild("Torso").Rotation
+		end
+
+		-- Connections
+
+		_G.hC = plr.Character.Humanoid.Jumping:Connect(handleJumped)
+		_G.rsC = rs.Stepped:Connect(handleRender)
+
+		plr.CharacterAdded:Connect(function()
+			if not _G.Enabled then
+				return
+			end
+
+			_G.hC:Disconnect()
+			_G.hC = nil
+			_G.rsC:Disconnect()
+			_G.rsC = nil
+
+			_G.hC = plr.Character:WaitForChild("Humanoid").Jumping:Connect(handleJumped)
+			_G.rsC = rs.Stepped:Connect(handleRender)
+		end)
+
+		plr.PlayerGui.DescendantAdded:Connect(function(v)
+			if not _G.Enabled then
+				return
+			end
+
+			if plr.PlayerGui:FindFirstChild("Tracker") and plr.PlayerGui:FindFirstChild("Loop") then
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.AncestryChanged)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.AncestryChanged)) do
+					v:Disable();
+				end
+
+				plr.PlayerGui.Tracker.Disabled = true
+				plr.PlayerGui.Loop.Disabled = true
+				plr.PlayerGui.Tracker:Destroy()
+				plr.PlayerGui.Loop:Destroy()
+			end
+		end)
+
+		-- PVEye Disabler
+
+		pcall(function()
+			if plr.PlayerGui:FindFirstChild("Tracker") and plr.PlayerGui:FindFirstChild("Loop") and _G.Enabled then
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.AncestryChanged)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.AncestryChanged)) do
+					v:Disable();
+				end
+
+				plr.PlayerGui.Tracker.Disabled = true
+				plr.PlayerGui.Loop.Disabled = true
+				plr.PlayerGui.Tracker:Destroy()
+				plr.PlayerGui.Loop:Destroy()
+			end
+		end
+		)
+	end,
+})
+
+local SixthTab = Window:CreateTab("BAU", 4483362458) -- Title, Image
+local SixthTabSelection = SixthTab:CreateSection("BAU")
+Rayfield:Notify({
+	Title = "Executed KNB hub by campy",
+	Content = "Hog Ridaaa",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "EZ",
+			Callback = function()
+				print("IKR")
+			end
+		},
+	},
+})
+
+local Button = SixthTab:CreateButton({
+	Name = "BAU Footing Checker",
+	Callback = function()
+		-- Variables
+
+		_G.Enabled = true
+
+		local s, e = pcall(function()
+			_G.rsC:Disconnect()
+			_G.hC:Disconnect()
+			_G.torso:Destroy()
+		end)
+
+		if s then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "BAU FOOTING CHECKER",
+				Text = "Aimbot was reset!",
+				Duration = 3
+			})
+
+			_G.rsC = nil
+			_G.hC = nil
+			_G.torso = nil
+		end
+
+		local plr = game.Players.LocalPlayer
+
+		local uis = game:GetService("UserInputService")
+		local rs = game:GetService("RunService")
+
+		local footing = false
+		local almostFooting
+		local hasBall = false
+		local parts = {}
+		local RunService = game:GetService("RunService")
+		local CoreGui = game:GetService("CoreGui")
+		local Player = game.Players.LocalPlayer
+
+		-- Torso Part
+
+		_G.torso = Instance.new("Part")
+		_G.torso.Transparency = 1
+		_G.torso.CanCollide = false
+		_G.torso.Anchored = false
+		_G.torso.Massless = true
+		_G.torso.Name = tostring(math.random(-9e9, 9e9))
+		_G.torso.Size = Vector3.new(2.5, 2.5, 1.5)
+		_G.torso.Transparency = 1
+		_G.torso.Material = Enum.Material.Plastic
+		_G.torso.Parent = workspace
+
+		-- Functions
+
+		function checkFooting()
+			if hasBall then
+				if footing then
+					if CoreGui:FindFirstChild("Highlight") then
+						if CoreGui:FindFirstChild("Highlight").Adornee.Parent == nil then
+							CoreGui:FindFirstChild("Highlight").Adornee = Player.Character
+						end
+
+						CoreGui:FindFirstChild("Highlight").Enabled = true
+						CoreGui:FindFirstChild("Highlight").FillColor = Color3.fromRGB(0, 255, 0)
+						CoreGui:FindFirstChild("Highlight").OutlineColor = Color3.fromRGB(25, 255, 25)
+					else
+						local Highlight = Instance.new("Highlight")
+						Highlight.Parent = CoreGui
+						Highlight.Adornee = Player.Character
+						Highlight.Enabled = false
+					end
+				elseif almostFooting then
+					if CoreGui:FindFirstChild("Highlight") then
+						if CoreGui:FindFirstChild("Highlight").Adornee.Parent == nil then
+							CoreGui:FindFirstChild("Highlight").Adornee = Player.Character
+						end
+
+						CoreGui:FindFirstChild("Highlight").Enabled = true
+						CoreGui:FindFirstChild("Highlight").FillColor = Color3.fromRGB(251, 255, 0)
+						CoreGui:FindFirstChild("Highlight").OutlineColor = Color3.fromRGB(255, 255, 0)
+					else
+						local Highlight = Instance.new("Highlight")
+						Highlight.Parent = CoreGui
+						Highlight.Adornee = Player.Character
+						Highlight.Enabled = false
+					end
+				elseif not footing and CoreGui:FindFirstChild("Highlight") then
+					CoreGui:FindFirstChild("Highlight").Enabled = false
+				end
+			elseif not hasBall and CoreGui:FindFirstChild("Highlight") then
+				CoreGui:FindFirstChild("Highlight").Enabled = false
+			end
+		end
+
+		function getGoal()
+			local dist, goal = 9e9
+			for i,v in pairs(workspace:GetDescendants()) do
+				if v.Name == "Goal" or v.Name == "SHEESH" or v.Name == "Rim" then
+					local mag = (plr.Character.HumanoidRootPart.Position - v.Position).Magnitude
+					if dist > mag then
+						dist = mag; goal = v;
+					end
+				end
+			end
+			return goal
+		end
+
+		function getNewVector(goal)
+			local dist = (plr.Character.Torso.Position - goal.Position).Magnitude
+			return goal.Position + Vector3.new(0, 45 - (dist / 10), 0) - plr.Character.Humanoid.MoveDirection
+		end
+
+		function shootBall(vector)
+			local event = plr.Character.Basketball.shoot_event
+
+			local unit = (vector - plr.Character.Head.Position).Unit
+			local spawnPos = plr.Character.PrimaryPart.Position + unit * 3.8
+
+			if spawnPos.Y - plr.Character.PrimaryPart.Position.Y < 4 then
+				spawnPos = plr.Character.PrimaryPart.Position + unit * 4
+			end
+
+			event:FireServer(
+				vector,
+				spawnPos,
+				"\240\159\148\165\240\159\148\165"
+			)
+		end
+
+		function handleJumped()
+			if hasBall and footing or almostFooting and _G.Enabled then
+				task.wait(0.3)
+				shootBall(getNewVector(getGoal()))
+			end
+		end
+
+		function handleRender()
+			if not _G.Enabled or _G.torso == nil then
+				return
+			end
+
+			local goal = getGoal()
+			local dist = (plr.Character.Torso.Position - goal.Position).Magnitude
+
+			if math.floor(dist) == 59 or math.floor(dist) == 64 then
+				footing = true
+				almostFooting = false
+			elseif math.floor(dist) == 58 or math.floor(dist) == 60 then
+				almostFooting = true
+				footing = false
+			else
+				footing = false
+				almostFooting = false
+			end
+
+			if plr.Character and plr.Character:FindFirstChild("Basketball") then
+				task.wait(0.5)
+				hasBall = true
+			else
+				hasBall = false
+			end
+
+			checkFooting()
+			_G.torso.Position = plr.Character:WaitForChild("Torso").Position
+			_G.torso.Rotation = plr.Character:WaitForChild("Torso").Rotation
+		end
+
+		-- Connections
+
+		_G.hC = plr.Character.Humanoid.Jumping:Connect(handleJumped)
+		_G.rsC = rs.Stepped:Connect(handleRender)
+
+		plr.CharacterAdded:Connect(function()
+			if not _G.Enabled then
+				return
+			end
+
+			_G.hC:Disconnect()
+			_G.hC = nil
+			_G.rsC:Disconnect()
+			_G.rsC = nil
+
+			_G.hC = plr.Character:WaitForChild("Humanoid").Jumping:Connect(handleJumped)
+			_G.rsC = rs.Stepped:Connect(handleRender)
+		end)
+
+		plr.PlayerGui.DescendantAdded:Connect(function(v)
+			if not _G.Enabled then
+				return
+			end
+
+			if plr.PlayerGui:FindFirstChild("Tracker") and plr.PlayerGui:FindFirstChild("Loop") then
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.AncestryChanged)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.AncestryChanged)) do
+					v:Disable();
+				end
+
+				plr.PlayerGui.Tracker.Disabled = true
+				plr.PlayerGui.Loop.Disabled = true
+				plr.PlayerGui.Tracker:Destroy()
+				plr.PlayerGui.Loop:Destroy()
+			end
+		end)
+
+		-- PVEye Disabler
+
+		pcall(function()
+			if plr.PlayerGui:FindFirstChild("Tracker") and plr.PlayerGui:FindFirstChild("Loop") and _G.Enabled then
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.Changed)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Loop.AncestryChanged)) do
+					v:Disable();
+				end
+				for i,v in pairs(getconnections(plr.PlayerGui.Tracker.AncestryChanged)) do
+					v:Disable();
+				end
+
+				plr.PlayerGui.Tracker.Disabled = true
+				plr.PlayerGui.Loop.Disabled = true
+				plr.PlayerGui.Tracker:Destroy()
+				plr.PlayerGui.Loop:Destroy()
+			end
+		end
+		)
+	end,
+})
+
+local Button = SixthTab:CreateButton({
+	Name = "BAU CAMLOCK",
+	Callback = function()
+		local tabDown = false
+		local input = game:GetService('UserInputService')
+		local player = game.Players.LocalPlayer
+		local camera = game.Workspace.CurrentCamera
+		local character = player.Character 
+		local head = character.Head
+		local torso = character.Torso
+		pos = Vector3.new(0,0,0)
+		local rs = game:GetService('RunService')
+		isdoing = false
+
+		cor = coroutine.create(function()
+			while wait() do
+				if tabDown and I == 0 then
+					local pos = head.Position
+					local partyGoal = findGoal(head.Position)
+					local lookAt = partyGoal.Position + Vector3.new(0,37,0)
+					local mag = (character.PrimaryPart.Position - partyGoal.Position).magnitude
+					local cameraCFrame = CFrame.new(pos, lookAt)
+					camera.CFrame = cameraCFrame
+					I = I + 1
+					rs.RenderStepped:Wait()
+					I = I - 1
+					if isdoing == false then
+						coroutine.yield()
+					end
+				end
+			end
+
+
+
+		end)
+
+		function findGoal(position)
+			local nearestGoal = nil
+			local lowest = math.huge
+			for i,v in pairs(game.Workspace:GetDescendants()) do
+				if v.Name == 'Goal' and v:IsA('Part') then
+					local distance = (torso.Position - v.Position).magnitude
+					if distance < lowest then
+						lowest = distance
+						Goal = v
+					end
+				end
+			end
+			return Goal
+		end
+
+		input.InputBegan:Connect(function(key, gpe)
+			local xkey = key.KeyCode
+			if xkey == Enum.KeyCode.X then
+				tabDown = true
+				if isdoing == false then
+					wait()
+					isdoing = true 
+					coroutine.resume(cor)
+				end
+			end
+		end)
+
+		input.InputEnded:Connect(function(key, gpe)
+			local xkey = key.KeyCode
+			if xkey == Enum.KeyCode.X then
+				tabDown = false
+				if isdoing then
+					isdoing = false
+				end 
+			end 
+		end)
+		I = 0
+	end
+})
